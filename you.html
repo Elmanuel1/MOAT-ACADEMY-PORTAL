@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        .block {
+            width: 10%;
+            height: 50px;
+
+            float: left;
+            background-color: #0c0c0c;
+        }
+        .cnnbar {
+            width:50px;
+            height: 70px;
+            float: left;
+            display: inline-block;
+            margin-right: 0px;
+            background: #cb0100;
+        }
+        .nav {
+            width: 85%;
+            height: 50px;
+            display: inline-block;
+            float: left;
+            background-color: #0c0c0c;
+        }
+        .navlinks {
+            width: 80%;
+            display: inline-block;
+            position: relative;
+            top: 20px;
+            color: #fefefe;
+            float: left;
+
+        }
+        .menu{
+
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            float: right;
+            margin-right: 10%;
+            margin-left: 10px;
+            position: relative;
+            top: 10px;
+        }
+        #search {
+                    width: 30px;
+            height: 30px;
+            display: inline-block;
+            float: right;
+            position: relative;
+            top: 10px;
+        }
+        .cnnX {
+            float: left;
+            margin-left: 10%;
+            width: 50px;
+            height: 70px;
+            background: rgb(202, 0, 2);
+            text-align: center;
+            color: #ffffff;
+            line-height: 70px;
+
+        }
+        .navX {
+
+            padding: 20px;
+            color: #929292;
+        }
+        .colX {
+            background: #0c0c0c;
+        }
+        #menuX {
+            border: 1px solid red;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            float: right;
+            margin-right: 10%;
+            margin-left: 10px
+        }
+        #searchX {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            float: right;
+        }
+        .interX {
+            width: 200px;
+            display: inline-block;
+            color: #929292;
+            margin-left: 20px;
+        }
+
+        body {
+            margin: 0px;
+        }
+        .pic{
+            width: 54%;
+            height: 600px;
+            display: inline-block;
+            float: left;
+            clear: both;
+            margin-left: 10%;
+            background-color: #fefefe
+        }
+        .list {
+            width: 25%;
+            height: 600px;
+            display: inline-block;
+            position: absolute;
+            top: 70px;
+            right: 0px;
+            margin-right: 10%;
+            overflow-y: scroll;
+
+            }
+
+            .pic img {
+                width: 100%;
+                height: 350px;
+                position: relative;
+                top: -120px
+
+            }
+            .pic h1 {
+                text-align: center;
+                color: #272727;
+                margin-bottom: 10px;
+                position: relative;
+                top: -100px;
+                font-size: 3em;
+            }
+             h3 {
+                padding: 3px;
+                background-color: #f2f2f2;
+                color: #272727;
+                border: 2px solid #f2f2f2;
+
+            }
+             span{
+                width: 90%;
+                height: 25px;
+                padding-bottom: 5px;
+                text-align: left;
+                border-bottom: 3px solid #f2f2f2;
+                color: #2c1f17;
+                display: block;
+                margin-left: 10px;
+                vertical-align: center;
+                font-size: 16px;
+                height: 10px;
+                display: block;
+            }
+        #breaking {
+            padding: 10px;
+            background-color: rgb(202, 0, 2);
+            display: inline;
+            color: white;
+            position: relative;
+            top: 350px;
+            left: -9px;
+            z-index: 1;
+            border: 0px;
+        }
+        #virus {
+            width: 54%
+            height:40px;
+            left: 0px;
+            position: relative;
+            top: 395px;
+            border: 2px solid #f2f2f2;
+            padding: 5px;
+            background-color: #e0e7ef;
+            font-weight: 700;
+            color: rgb(202, 0, 2);
+            font-size: 1.8em;
+        }
+        .pic span {
+            width: 95%;
+            padding: 10px;
+            font-size: 1.4em;
+        }
+        .row2 {
+            margin-left: 10%;
+            margin-right: 10%;
+            border: 2px solid #f2f2f2;
+            width: 80%;
+            height: 600px;
+            clear: both;
+            position: relative;
+            top: 10px;
+            left: 0px;
+            background-color: #fefefe;
+        }
+        .first2 {
+            width: 29%;
+            min-height: 600px;
+            border: 2px solid #f2f2f2;
+            float: left;
+        }
+        .second2 {
+            position: relative;
+            top: 0px;
+            width: 40%;
+            height: 600px;
+            border: 2px solid #f2f2f2;
+            display: inline-block;
+            margin-left: 10px;
+            margin-right: 0px;
+            font-size: 1em;
+        }
+
+        .first2 img,.second2 img {
+            width: 100%;
+            position: relative;
+            top: -35px;
+            left: 0px;
+            display: block;
+
+        }
+        .third2 {
+            width: 28%;
+            height: 600px;
+            border: 1px solid #f2f2f2;
+            float: right;
+
+        }
+        .third2 #improve {
+            font-size: 2em;line-height: 1.2em;
+            padding: 5px;
+            border-left: 4px solid blue;
+            width: 100%;
+            display: inline-block;
+            height: 70px;
+            border-bottom: 0px;
+            margin-left: 0px;
+
+                    }
+        .third2 #opportunity{
+            font: 1.6em;
+            line-height: 1.4em;
+            padding: 5px;
+            width: 100%;
+            display: inline-block;
+            min-height: 140px;
+            margin-top: 10px;
+            border-bottom: 0px;
+            margin-left: 0px;
+        }
+        .third2 img {
+            width: 40%;
+            height: 100px;
+            float: left;
+            position: relative;
+            top: -90px;
+        }
+        .third2 #moat {
+            width: 58%;
+            height: 90px;
+            float:right;
+            position: relative;
+            top: -190px;
+            border-bottom: 0px
+
+        }
+
+        #advert{
+            width: 100%;
+            display: inline-block;
+            height: 50px;
+            text-align: center;
+        }
+
+        #spotlight{
+            position: relative;
+            top: -75px;
+        }
+
+        #around, #featured {
+            position: relative;
+            top: -15px;
+            left: 0px;
+        }
+        .second2 img {
+            height: 250px;
+        }
+        .first2 img {
+            height: 200px;
+        }
+        .first2 span {
+            position: relative;
+            top: -100px;
+            color: #4d3c32;
+            width: 100%
+            height: 200px;
+            line-height: 100px;
+            margin-top: 5px;
+            vertical-align: center;
+        }
+        h1, h2{
+            position: relative;
+            top: -60px;
+            left: 0px;
+            border: 1px solid #f2f2f2;
+            padding: 10px;
+
+        }
+         .ferrari img {
+            float: left;
+            width: 40%;
+            height: 120px;
+            position: relative;
+            top: -70px;
+            right: 0px;
+            margin-right: 10px;
+
+        }
+        .f1 img {
+            clear: both;
+             float: left;
+            width: 40%;
+            height: 120px;
+            position: relative;
+            top: -70px;
+            right: 0px;
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        .row2 {
+            margin-top: 10px;
+        }
+        #moat {
+            font-sizex: 1.1em
+        }
+        .ferrari span {
+            position: relative;
+            top: -70px;
+            border-bottom: 0px;
+            font-sizex: 0.9em
+            color:#f2f2f2;
+        }
+        .row4, .row3 {
+            width: 80%;
+            margin-right: 10%;
+            margin-left: 10%;
+            height:200px;
+            margin-top: 3px;
+            clear: both;
+            background-color: #fefefe
+        }
+        .first3 {
+            width: 29%;
+            height: 200px;
+            float: left;
+        }
+        .trum {
+            width: 28%;
+            height: 200px;
+            display: inline-block;
+        }
+        .disney {
+            width: 40%;
+            height: 200px;
+            display: inline-block;
+            margin-right: 5px;
+            margin-left: 10px;
+            position: relative;
+            top: 0px;
+        }
+        .trum h3,.first3 h3 {
+            position: relative;
+            top: -17px;
+        }
+         .first3 img,.trum img {
+            width: 100%;
+            height: 82%;
+            position: relative;
+            top: -33px;
+        }
+        #volunteer {
+            height: 200px;
+            width: 100%;
+            position: absolute;
+            top: -25px;
+        }
+        .first4 {
+            width: 29%;
+            height: 400px;
+            border: 2px solid #f2f2f2;
+            float: left;
+            overflow: hidden;
+        }
+        .second4 {
+            width: 28%;
+            height: 400px;
+            border: 3px solid #f2f2f2;
+            display: inline-block;
+            overflow: hidden;
+        }
+        .third4 {
+            width: 40%;
+            height: 400px;
+            display: inline-block;
+            margin-right: 5px;
+            margin-left: 5px;
+            }
+        #boy, #mayweather {
+            font-size: 1.2em;
+            color: #3b405d;
+            border: 0px;
+            text-align: left;
+            margin-left: 0px;
+            }
+            .second4 img, .first4 img {
+                width: 100px;
+                height: 100px;
+                margin-top: 3px;
+                float: left;
+                position: relative;
+                top: -11px;
+                margin-right: 5px;
+                clear: both;
+
+            }
+            #paddle {
+                border: 0px;
+                position: relative;
+                top: -10px
+                font-size: 0.9em;
+                color: #3b405d
+            }
+            hr {
+                background-color: #f2f2f2;
+                clear: both;
+                border: 3px solid #f2f2f2;
+            }
+            .row4 {
+                height: 500px;
+            }
+            #sushi, #survivor {
+                position: relative;
+                top: 70px;
+                border: 0px;
+                font-size: 0.9em;
+                color: #3b405d;
+            }
+            #sushi {
+                top: 0px;
+            }
+            .third4 {
+                position: relative;
+                top: -40px;
+                border: 4px solid #f2f2f2;
+                height: 365px;
+                overflow: hidden;
+            }
+            .third4 h2 {
+                position: relative;
+                top: -25px;
+                padding: 5px;
+                font-size: 1.3em;
+                background-color: #f2f2f2;
+            }
+            .third4 img {
+                width: 50%;
+                float: left;
+                height: 150px;
+                position: relative;
+                top: -42px;
+                margin-top: 10px;
+                margin-right: 5px;
+
+            }
+            #shopping {
+                position: relative;
+                top: -40px;
+                border: 0px;
+                font-size: 1.4em;
+            }
+            #potato {
+                height: 150px;
+            }
+            .pota {
+                position: relative;
+                top: 0px;
+                border: 0px;
+                font-size: 1.4em;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+            a:hover {
+                background-color: orange;
+            }
+            .why {
+                position: relative;
+                top: -80px;
+                margin-left: 0px;
+                line-height: 1em;
+                padding: 0px;
+
+            }
+    </style>
+</head>
+<body>
+<!-- Container for the navigation bar
+    <div>
+        <div class="col">
+        Container for the cnn box
+
+        <div class="cnn"><a href="#">AMN</a></div>
+
+        Container for the navigation links
+
+        <div class="nav">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="#"> Regions</a>   |   <a href="#">U.S Politics </a>  |   <a href="#">Money</a>   |   <a href="#">Entertainment</a>  |  <a href="#">Tech</a>  |   <a href="#">Sport</a>   |   <a href="#">Travel</a>  |   <a href="#">Style</a>   |   <a href="#">Health</a>   | <a href="#">Video </a>  |   <a href="#">VR</a>
+            <div class="inter">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#">International Edition<strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+</a></strong></div>
+
+
+            <div id="menu"><a href="#">33</a></div>
+            <div id="search"><a href="#">34</a></div>
+
+        </div>
+
+        </div>-->
+        <div>
+        <div class="block"></div>
+        <div class="cnnbar"></div>
+        <div class="nav">
+            <div class="navlinks">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="#"> Regions</a>   |   <a href="#">U.S Politics </a>  |   <a href="#">Money</a>   |   <a href="#">Entertainment</a>  |  <a href="#">Tech</a>  |   <a href="#">Sport</a>   |   <a href="#">Travel</a>  |   <a href="#">Style</a>   |   <a href="#">Health</a>   | <a href="#">Video </a>  |   <a href="#">VR</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#">International Edition</a><strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+</a></strong></div>
+            <div class="menu"><a href="#">33</a></div>
+            <div id="search"><a href="#">34</a></div>
+        </div>
+    </div>
+</body>
+</html>
+
+        <!-- Container for the OPENING CONTENT-->
+        <div class="pic">
+
+        <span id="breaking"><a href="#">BREAKING NEWS</a></span>
+        <p id="virus"><a href="#">Virus that hold data hostage hits 99 countries</a></p>
+            <h1><a href="#">Global cyber attack</a></h1>
+            <img src="../moatslides/pic1.jpg" alt="cyberpix">
+            <span class="why"><a href="#">Why this type of attack is on the rise</a></span><br>
+            <span class="why"><a href="#">What one school did whn their data was hijacked</a></span>
+        </div>
+
+
+
+        <!-- Container for the SIDE BAR-->
+        <div class="list">
+            <div class="topstories">
+            <h3><a href="#">Top Stories</a></h3>
+                <span><a href="#">Russia ridicules US political woes</a></span><br>
+               <span><a href="#">FBI director firing puts Trump's isolation in view</a></span><br>
+                <span><a href="#">Trump: Comey should hope there are no tapes</a></span><br>
+                <span><a href="#">Analysis: Washington's WTF week</a></span><br>
+                <span><a href="#">Russian US plane in close encounter</a></span><br>
+                <span><a href="#">Venezuela's Health Minister fired after release of soaring death rate</a></span><br>
+                <span><a href="#">7 year old refugee gets Turkish ID</a></span><br>
+                <span><a href="#">Macrom' wife confronts sexism, misogyny</a></span><br>
+                <span><a href="#">Kim's plot: N'Korea wants South's spy chef</a></span><br>
+                <span><a href="#">Air Force 1: Mechanic's $4 million of damage</a></span></div>
+                <h3><a href="#">China in focus</a></h3>
+                <span><a href="#">China's got a grand plan to change the world, <br>but does it come at a price?</a> </span>
+        </div>
+        <!-- Container for the second row-->
+        <div class="row2">
+            <div class="first2">
+                <h3 id="around"><a href="#">Around the world</a></h3>
+                <img src="../moatslides/grandpa.jpg">
+                <h2><a href="#">Riot police block Grandparent March in Venezuela</a></h2>
+                <span><a href="#">Mellisa McCarthy as Sean Spicer outside CNN's office</a></span>
+                <span><a href="#">Rapper pretends to fly private. Twitter erupts</a></span>
+                <span><a href="#">Trump on F-35 over JapAN: 'Pretty cool,' but did it truly happen?</a></span>
+                <span><a href="#">Europe braces for US laptop ban</a></span>
+                <span><a href="#">'Grey Death' street drug puzzling cops</a></span>
+
+            </div>
+
+            <div class="second2">
+                <h3 id="featured"><a href="#">Featured</a></h3>
+                <img src="../moatslides/conte.jpg">
+                <h1><a href="#">How Conte led chelsea to title </a></h1>
+                <div class="ferrari">
+                    <img src="../moatslides/ferrari.jpg">
+                    <span id="ferrari"><a href="#">Ferrari races horse---Who wins?</a></span><br><br>
+                </div>
+                <div class="f1">
+                    <img src="../moatslides/teen.jpg">
+                    <span id="f1"><a href="#">F1's teen sensation hoping to get lucky</a></span>
+                </div>
+            </div>
+            <div class="third2">
+                <span id="improve">Innovate,<br> Improve, Excel....</span>
+                <span id="opportunity">A life changing opportunity. Why study online for a Master's degree?</span>
+                <a href="#">apply.unicaf.org</a><br>
+                <h6 id="advert"><a href="#">Advertisement</a></h6>
+                <h3 id="spotlight"><a href="#">Spotlight</a></h3>
+                <img src="../moatslides/dev.jpg">
+                <span id="moat"><a href="#">Moat academy named the best bootcamp in Africa for the second time...</a></span>
+            </div>
+        </div>
+
+        <!-- Container for the Row 3-->
+        <div class="row3">
+            <div class="first3">
+                <h3><a href="#">Take a closer look</a></h3>
+                <img src="../moatslides/fight.jpg">
+            </div>
+            <div class="disney" >
+            <img src="../moatslides/volunteer.jpg" id="volunteer">
+            </div>
+            <div class="trum">
+                <h3><a href="#">Opinion</a></h3>
+                <img src="../moatslides/trump.jpg">
+            </div>
+        </div>
+
+        <!-- Container for the Row 4-->
+        <div class="row4">
+            <div class="first4">
+               <span id="mayweather"><a href="#">UFC chief 'pretty confident' of McGregor vs Mayweather fight</a></span><br><hr>
+                <img src="../moatslides/paddleboat.jpg" id="paddleboat">
+                <span id="paddle"><a href="#">Paddleboating near 15 great white sharks</a></span>
+                <img src="../moatslides/survivor.jpg" >
+               <span id="survivor"><a href="#">Not expected to live past 10, he graduates college college this week</a></span><br><hr>
+               <img src="../moatslides/sushi.jpg" >
+               <span id="sushi"><a href="#">Parasites could be lurking in your sushi</a></span><br><br><br><hr>
+            </div>
+            <div class="third4">
+                <h2><a href="#">Charity world volunteers are ranked high</a></h2>
+                <img src="../moatslides/resized.jpg" id="shopping">
+                <span id="shopping"><a href="#">Shopping: New way of life</a></span><br><br><br><br><hr>
+                <img src="../moatslides/potato.jpg" id="potato">
+                <span class="pota"><a href="#">Are potatoes healthy?</a></span>
+            </div>
+            <div class="second4" >
+                <span id="boy"><b><a href="#">Gloria Boger:</b> No one can save Trump from himself</a></span><br><hr>
+                <img src="../moatslides/trump.jpg" id="paddleboat">
+                <span id="paddle"><b><a href="#">Gloria Boger:</b> Trump still throwing tantrums and asking staff to clean up the mess</a></span>
+                <img src="../moatslides/u3.jpg" >
+               <span id="survivor"><b><a href="#">Elizabeth Holtzman:</b>We forget watergate at our own peril</a></span><br><hr>
+               <img src="../moatslides/boy president.jpg" >
+               <span id="sushi"><a href="#"><b>Michael D'Antonio</b> The little boy president</a></span></span><br><br><br><hr>
+            </div>
+
+        </div>
+        <div>
+            THE MAN IS A VERY VERY BIG STAGE THE MAN IS A VERY VERY BIG STAGETHE MAN IS A VERY VERY BIG STAGETHE MAN IS A VERY VERY BIG STAGETHE MAN IS A VERY VERY BIG STAGE
+        </div>
+
+
+
+
+</body>
+</html>
